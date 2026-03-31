@@ -33,7 +33,7 @@ SyntexHub/
 
 ## 🚀 Live Demo
 
-👉 https://hooriasadiq.github.io/syntecxhub_landing_page/css/style.css
+👉 https://hooriasadiq.github.io/syntecxhub_landing_page/
 
 ---
 
