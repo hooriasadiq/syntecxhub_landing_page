@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SyntecxHub Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <h2 class="logo">SyntecxHub</h2>
+  <ul>
+    <li><a href="home">Home</a></li>
+    <li><a href="features">Features</a></li>
+    <li><a href="contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section id="home"  class="hero">
+  <div class="hero-text">
+    <h1 class="fade-in">Build Your Future 🚀</h1>
+    <p class="fade-in">Modern solutions for developers & creators.</p>
+    <button onclick="showMessage()">Get Started</button>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="features">
+  <h2 class="fade-in">Our Features</h2>
+
+  <div class="cards">
+    <div class="card fade-in">
+      <h3>⚡ Fast</h3>
+      <p>Optimized performance for best experience.</p>
+    </div>
+
+    <div class="card fade-in">
+      <h3>🎨 Modern UI</h3>
+      <p>Clean and beautiful design layouts.</p>
+    </div>
+
+    <div class="card fade-in">
+      <h3>📱 Responsive</h3>
+      <p>Works perfectly on mobile & desktop.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you 💬</p>
+
+    <form>
+      <div class="input-box">
+        <input type="text" required>
+        <label>Name</label>
+      </div>
+
+      <div class="input-box">
+        <input type="email" required>
+        <label>Email</label>
+         </div>
+
+      <div class="input-box">
+        <textarea required></textarea>
+        <label>Message</label>
+      </div>
+
+      <button type="submit">Send Message 🚀</button>
+    </form>
+
+  </div>
+</section>
+
+</body>
+</html>
+
+<!-- CTA -->
+<section class="cta fade-in">
+  <h2>Ready to Start?</h2>
+  <button onclick="joinNow()">Join Now</button>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 SyntecxHub | All Rights Reserved</p>
+</footer>
+
+
+<script>
+    // Button Click
+function showMessage() {
+  alert("Welcome to SyntecxHub 🚀");
+}
+
+function joinNow() {
+  alert("Thanks for joining! 🎉");
+}
+
+// Scroll Animation
+const faders = document.querySelectorAll(".fade-in");
+
+window.addEventListener("scroll", () => {
+  const triggerBottom = window.innerHeight * 0.8;
+
+  faders.forEach(el => {
+    const boxTop = el.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      el.classList.add("show");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
