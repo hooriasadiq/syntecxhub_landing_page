@@ -56,7 +56,7 @@ SyntexHub/
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/syntexhub.git
+git clone https://github.com/hooriasadiq/syntexhub.git
 ```
 
 2. Open folder:
